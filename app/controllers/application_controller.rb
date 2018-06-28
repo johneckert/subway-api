@@ -14,7 +14,10 @@ class ApplicationController < ActionController::API
         trip_data << entity.trip_update
       end
     end
-    render json: trip_data, status: 200
+
+
+
+    render json: trip_data[0], status: 200
   end
 
 end
