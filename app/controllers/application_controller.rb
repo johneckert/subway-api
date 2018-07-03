@@ -17,7 +17,7 @@ class ApplicationController < ActionController::API
 
 
 
-    render json: trip_data[0], status: 200
+    render json: trip_data, status: 200
   end
 
 end
