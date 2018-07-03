@@ -1,16 +1,16 @@
 class CreateCalendars < ActiveRecord::Migration[5.1]
   def change
     create_table :calendars do |t|
-      t.string :service_id
-      t.string :monday
-      t.string :tuesday
-      t.string :wednesday
-      t.string :thursday
-      t.string :friday
-      t.string :saturday
-      t.string :sunday
-      t.string :start_date
-      t.string :end_date
+      t.string :service_id 
+      t.integer :monday
+      t.integer :tuesday
+      t.integer :wednesday
+      t.integer :thursday
+      t.integer :friday
+      t.integer :saturday
+      t.integer :sunday
+      t.date :start_date
+      t.date :end_date
 
       t.timestamps
     end

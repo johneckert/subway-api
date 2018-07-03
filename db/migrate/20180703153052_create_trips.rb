@@ -5,9 +5,9 @@ class CreateTrips < ActiveRecord::Migration[5.1]
       t.string :service_id
       t.string :trip_id
       t.string :trip_headsign
-      t.string :direction_id
+      t.integer :direction_id
       t.string :block_id
-      t.string :shape_id
+      t.string :shape_id 
 
       t.timestamps
     end
